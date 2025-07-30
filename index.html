@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>Injection Lab</title></head>
+<body>
+<h1>Injection Vulnerability Lab</h1>
+<form method="POST">
+
+<fieldset><legend>SQL Injection</legend>
+Username: <input name="sql_user"><br>
+Password: <input name="sql_pass"><br>
+Result: {{ sql_result }}<br>
+</fieldset>
+
+<fieldset><legend>Command Injection</legend>
+Ping host: <input name="cmd_target"><br>
+<pre>{{ cmd_result }}</pre>
+</fieldset>
+
+<fieldset><legend>XPath Injection</legend>
+Username: <input name="xpath_user"><br>
+Password: <input name="xpath_pass"><br>
+Result: {{ xpath_result }}<br>
+</fieldset>
+
+<fieldset><legend>LDAP Injection</legend>
+Username: <input name="ldap_user"><br>
+Password: <input name="ldap_pass"><br>
+Result: {{ ldap_result }}<br>
+</fieldset>
+
+<fieldset><legend>NoSQL Injection</legend>
+Username: <input name="nosql_user"><br>
+Password: <input name="nosql_pass"><br>
+Result: {{ nosql_result }}<br>
+</fieldset>
+
+<input type="submit" value="Submit All">
+</form>
+</body>
+</html>
+
